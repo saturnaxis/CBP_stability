@@ -12,7 +12,7 @@ Attribution
 A more detailed description of these simulations, the use of an interpolation method, and the context for the Kepler circumbinary planets (CBPs) will be available in a forthcoming paper.  However in the meantime please use the following citation, if you find these tools useful in your research.::
 
   @article{Quarles2018,
-  author = {{Quarles}, B. and {Saytal}, S. and {Kostov}, V. and {Kaib}, N.} and {Haghighipour}, N.,
+  author = {{Quarles}, B. and {Saytal}, S. and {Kostov}, V. and {Kaib}, N. and {Haghighipour}, N.},
   title = {Stability Limits of Circumbinary Planets: Is There a Pile-up in the Kepler CBPs?},
   journal = {ApJ},
   year = 2018,
