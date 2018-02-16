@@ -5,6 +5,8 @@ This is a repository for tools to determine the stability limit, or smallest sem
 
 After cloning the repository, the tool for determining a_c for a given set of binary parameters (mu, e_bin) can be determined simply by running **'python get_ac.py mu eb'**, where the mu is replaced with a float [0, 0.5] and eb is replaced with a float [0,0.8].
 
+The results from all the simulations are available on Zenodo.org (http://doi.org/10.5281/zenodo.1174228) as a compressed tar archive.  After downloading this tar archive, simply running **'python plot_from_tar.py mu eb'** produces a figure of the the given (mu, e_bin) paramters.  The value for mu must be chosen from 0.01 - 0.50 in steps of 0.01 and the value for e_bin must be chosen from 0.0 - 0.8 in steps of 0.01.
+
 Attribution
 --------
 A more detailed description of these simulations, the use of an interpolation method, and the context for the Kepler circumbinary planets (CBPs) will be available in a forthcoming paper.  However in the meantime please use the following citation, if you find these tools useful in your research.::
