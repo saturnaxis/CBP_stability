@@ -18,4 +18,4 @@ zi = griddata((X,Y),Z,(xi[None,:],yi[:,None]),method = 'linear',fill_value=0)
 
 f = interp2d(xi, yi, zi, kind='linear')
 
-print f(mu,e_bin)
+print "a_c = ",f(mu,e_bin)[0]
