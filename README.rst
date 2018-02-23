@@ -1,5 +1,8 @@
 Stability Limit for the Innermost Circumbinary Planet
 --------
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1174228.svg
+   :target: https://doi.org/10.5281/zenodo.1174228
+--------
 
 This is a repository for tools to determine the stability limit, or smallest semimajor axis ratio (a_c = a_p/a_bin), of a circumbinary planet.  This summarized data in a_crit.txt collates ~150 million full N-body simulations using the well-established Mercury6 code (Chambers 1999, Chambers et al. 2002).  The simulations evaluated a wide range of initial binary parameters, including the binary mass ratio, mu, and binary eccentricity, e_bin.  The parameter mu is defined as the ratio of the smaller mass star divided by the total mass of the stellar binary.  These simulations were performed beginning at binary periastron and should be considered as conservative estimates of stability.  Due to symmetry only phases between 0 -- 180 degrees are tried, where the negative longitudes (-180 up to 0 deg.) are assumed to be mirror image of the positive ones.
 
