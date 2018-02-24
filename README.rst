@@ -19,5 +19,6 @@ A more detailed description of these simulations, the use of an interpolation me
   title = {Stability Limits of Circumbinary Planets: Is There a Pile-up in the Kepler CBPs?},
   journal = {ApJ},
   year = 2018,
-  pages = {under review}
+  month = {Feb.},
+  pages = {in press}
   }
