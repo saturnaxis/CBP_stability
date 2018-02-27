@@ -1,5 +1,7 @@
 Stability Limit for the Innermost Circumbinary Planet
 --------
+.. image:: https://img.shields.io/badge/arXiv-1802.08868-red.svg?style=flat 
+    :target: https://arxiv.org/abs/1802.08868 
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1174228.svg
    :target: https://doi.org/10.5281/zenodo.1174228
 --------
