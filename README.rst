@@ -12,13 +12,18 @@ The results from all the simulations are available on Zenodo.org (http://doi.org
 
 Attribution
 --------
-A more detailed description of these simulations, the use of an interpolation method, and the context for the Kepler circumbinary planets (CBPs) will be available in a forthcoming paper.  However in the meantime please use the following citation, if you find these tools useful in your research.::
+A more detailed description of these simulations, the use of an interpolation method, and the context for the Kepler circumbinary planets (CBPs) will be available in a forthcoming paper.  However in the meantime please use the following citation, if you find these tools useful in your research. ::
 
   @article{Quarles2018,
-  author = {{Quarles}, B. and {Saytal}, S. and {Kostov}, V. and {Kaib}, N. and {Haghighipour}, N.},
-  title = {Stability Limits of Circumbinary Planets: Is There a Pile-up in the Kepler CBPs?},
-  journal = {ApJ},
+  author = {{Quarles}, B. and {Satyal}, S. and {Kostov}, V. and {Kaib}, N. and {Haghighipour}, N.},
+  title = "{Stability Limits of Circumbinary Planets: Is There a Pile-up in the Kepler CBPs?}",
+  journal = {ArXiv e-prints},
+  archivePrefix = "arXiv",
+  eprint = {1802.08868},
+  primaryClass = "astro-ph.EP",
+  keywords = {Astrophysics - Earth and Planetary Astrophysics},
   year = 2018,
-  month = {Feb.},
-  pages = {in press}
+  month = feb,
+  adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180208868Q},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
   }
