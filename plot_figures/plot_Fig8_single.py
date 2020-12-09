@@ -102,7 +102,7 @@ ax.tick_params(axis='both', direction='out',length = 4.0, width = 4.0)
 ax.set_yticks([k*0.1 for k in range(0,6)])
 #ax.set_yticklabels(['%1.1f' % (k*0.1) for k in range(0,5)])
 
-ax.set_ylabel("($e_p$)",fontsize = fs)
+ax.set_ylabel("$e_p$",fontsize = fs)
 ax.set_xlabel("$a_p$ (AU)", fontsize = fs)
 
 
