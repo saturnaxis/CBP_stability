@@ -9,6 +9,6 @@ Run these notebooks from the repository root. They are ordered from the lightest
 | `02_figures_3_4_acrit_trends.ipynb` | Recreate median/range stability-limit trends. | `a_crit.txt` |
 | `03_figure_5_stability_surface.ipynb` | Plot the stability surface and Kepler CBP locations. | `a_crit.txt` |
 | `04_figure_6_packing_summary.ipynb` | Recreate the dynamical-spacing summary. | Embedded table values |
-| `05_figures_7_8_kepler_maps.ipynb` | Explore Kepler-system single-planet and two-planet maps. | `plot_figures/Fig8_data` |
+| `05_figures_7_8_kepler_maps.ipynb` | Recreate paper Figures 7 and 8 with the original axes. | `MaxEcc.tar.gz` for Fig. 7; `plot_figures/Fig8_data` for Fig. 8 |
 | `06_zenodo_archive_custom_maps.ipynb` | Plot arbitrary archive maps from `MaxEcc.tar.gz`. | Zenodo archive |
 | `07_rebound_slice_recreation.ipynb` | Rerun small slices using REBOUND. | Optional `rebound` install |

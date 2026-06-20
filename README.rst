@@ -95,9 +95,9 @@ The notebook examples are the recommended entry point for new users.
 +------------------------------------------------+-----------------------------------------------+------------------------------+
 | ``examples/03_figure_5_stability_surface.ipynb`` | ``a_c(mu,e_bin)`` surface and Kepler CBPs.  | ``a_crit.txt``               |
 +------------------------------------------------+-----------------------------------------------+------------------------------+
-| ``examples/04_figure_6_packing_summary.ipynb`` | Dynamical-spacing / planet-packing summary.  | Embedded table values        |
+| ``examples/04_figure_6_packing_summary.ipynb`` | Paper Figure 6 dynamical-spacing schematic. | Embedded table values        |
 +------------------------------------------------+-----------------------------------------------+------------------------------+
-| ``examples/05_figures_7_8_kepler_maps.ipynb``  | Kepler-system single/two-planet maps.         | Included Fig8 data subsets   |
+| ``examples/05_figures_7_8_kepler_maps.ipynb``  | Paper Figures 7 and 8 with original axes.     | Zenodo archive + Fig8 data   |
 +------------------------------------------------+-----------------------------------------------+------------------------------+
 | ``examples/06_zenodo_archive_custom_maps.ipynb`` | Plot arbitrary maps from ``MaxEcc.tar.gz``. | Zenodo archive               |
 +------------------------------------------------+-----------------------------------------------+------------------------------+
@@ -134,7 +134,7 @@ If you have already extracted a text file from the archive, use::
 
    python plot_from_file.py MaxEcc_[0.200,0.200].txt --mode two-panel
 
-The original first-update plotting scripts are preserved in
+The original year-later plotting scripts are preserved in
 ``original_later_plotting/`` for reference. The modern top-level scripts use the
 same ideas, but are Python 3 compatible and share helper functions in
 ``cbp_plotting.py``.
