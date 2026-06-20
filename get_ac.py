@@ -1,21 +1,28 @@
-import numpy as np
-import sys
-from scipy.interpolate import griddata
-from scipy.interpolate import interp2d
+#!/usr/bin/env python3
+"""Command-line lookup for the Quarles et al. (2018) stability limit."""
 
-mu = float(sys.argv[1])
-e_bin = float(sys.argv[2])
+from __future__ import annotations
 
-data = np.genfromtxt("a_crit.txt",delimiter=',',comments='#')
+import argparse
 
-X = data[:,0]
-Y = data[:,1]
-Z = data[:,2]
+from cbp_stability import build_stability_grid, critical_period_days, get_ac
 
-xi = np.linspace(0,0.5,51)
-yi = np.linspace(0,0.8,81)
-zi = griddata((X,Y),Z,(xi[None,:],yi[:,None]),method = 'linear',fill_value=0)
 
-f = interp2d(xi, yi, zi, kind='linear')
+def main() -> None:
+    parser = argparse.ArgumentParser(description='Interpolate the CBP stability limit a_c = a_p/a_bin.')
+    parser.add_argument('mu', type=float, help='Binary mass ratio: smaller stellar mass divided by total stellar mass.')
+    parser.add_argument('e_bin', type=float, help='Binary eccentricity.')
+    parser.add_argument('--p-bin-days', type=float, default=None, help='Optional binary period in days. If supplied, print P_c too.')
+    parser.add_argument('--decimals', type=int, default=3, help='Number of decimals to print. Default: 3.')
+    args = parser.parse_args()
 
-print "a_c = ",f(mu,e_bin)[0]
+    grid = build_stability_grid()
+    ac = get_ac(args.mu, args.e_bin, grid=grid)
+    print(f'a_c = {ac:.{args.decimals}f}')
+    if args.p_bin_days is not None:
+        pc = critical_period_days(args.mu, args.e_bin, args.p_bin_days, grid=grid)
+        print(f'P_c = {pc:.{args.decimals}f} days')
+
+
+if __name__ == '__main__':
+    main()

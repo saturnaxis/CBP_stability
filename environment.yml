@@ -1,8 +1,14 @@
-name: binder-environment
+name: cbp-stability
 channels:
   - conda-forge
 dependencies:
+  - python>=3.10
   - numpy
   - scipy
   - matplotlib
   - pandas
+  - jupyterlab
+  - ipykernel
+  - pip
+  - pip:
+      - rebound

@@ -52,7 +52,7 @@ for dat in datalist:
 	Z = data[:,2]
 	Z[unstab] = 1.5
 	y_cr = []
-	for i in xrange(0,401):
+	for i in range(0,401):
 		yi = 1.01 + i*0.01
 		row_x = np.where(np.abs(Y-yi)<1e-6)[0]
 		all_stab = np.where(data[row_x,-1]==tscale)[0]
@@ -88,9 +88,9 @@ for dat in datalist:
 	if ax_ecc > 0:
 		ax.set_yticklabels([])
 	if ax_ecc == 0 and ax_mu>0:
-		ax.set_yticklabels(["%i" % i for i in xrange(1,5)])
+		ax.set_yticklabels(["%i" % i for i in range(1,5)])
 	if ax_mu == 3 and ax_ecc<3:
-		ax.set_xticklabels(["%i" % (90*i) for i in xrange(0,4)])
+		ax.set_xticklabels(["%i" % (90*i) for i in range(0,4)])
 
 
 # Fine-tune figure; make subplots close to each other and hide x ticks for

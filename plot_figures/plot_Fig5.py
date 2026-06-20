@@ -48,7 +48,7 @@ fig = plt.figure(1,figsize = (aspect*width,width))
 ax = fig.add_subplot(111)
 
 ax.pcolormesh(xi,yi,zi,cmap = cmap,vmin=vmin,vmax=vmax)
-for i in xrange(0,len(mu)):
+for i in range(0,len(mu)):
 	ax.plot(mu[i],e_b[i],'.',color='w',ms=10)
 	ax.text(mu[i],e_b[i]+0.02,names[i],color='w',fontsize='medium',horizontalalignment='center')
 
